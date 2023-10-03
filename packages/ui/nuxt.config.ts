@@ -2,16 +2,15 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    '@nuxt/ui',
-    '@formkit/auto-animate',
-    '@nuxt/image'
+    "@nuxt/ui",
+    "@formkit/auto-animate/nuxt",
+    "nuxt-icon",
+    "@nuxt/image",
   ],
   components: [{ path: "./components", prefix: "UI" }],
   ui: {
     global: true,
-    icons: ['mdi', 'simple-icons']
+    icons: ["mdi", "simple-icons"],
   },
-  image: {
-
-  }
-})
+  image: {},
+});

@@ -6,7 +6,8 @@
     "build": "turbo build"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "turbo": "^1.10.14"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
