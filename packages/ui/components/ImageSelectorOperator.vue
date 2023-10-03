@@ -75,8 +75,15 @@ function download(content: string, fileName: string, contentType: string) {
 }
 
 function onDownload() {
+  const data = imageItemsRef.value.map((item) => ({
+    url: item.url,
+    label: item.label,
+    idx: item.idx,
+    swipeRight: item.swipeRight,
+    swipeLeft: item.swipeLeft,
+  }));
   download(
-    JSON.stringify(imageItemsRef.value, null, 2),
+    JSON.stringify(data, null, 2),
     "kantu-classification-result.json",
     "text/plain"
   );
