@@ -1,5 +1,4 @@
 export * from "./src/types";
-export function hi() {
-  console.log("hi");
+export function hello() {
+  console.log("hello");
 }
-hi();
