@@ -15,16 +15,14 @@ function onFileChange(e: Event) {
       if (!fileContent) return;
       imageLinks.value = fileContent.toString()?.split("\n");
       inputStore.setImageUrls(imageLinks.value);
-      navigateTo("/image-classification");
     };
     reader.readAsText(files[0]);
   }
 }
 
-function onContinue() {
+function onTextareaInput() {
   imageLinks.value = textareaContent.value.split("\n");
   inputStore.setImageUrls(imageLinks.value);
-  navigateTo("/image-classification");
 }
 </script>
 <template>
@@ -32,7 +30,18 @@ function onContinue() {
     <h2 class="text-2xl">Choose a File</h2>
     <input type="file" @change="onFileChange" />
     <h2 class="text-2xl">Enter URLs (separated by new lines)</h2>
-    <UTextarea v-model="textareaContent" autoresize />
-    <UButton class="mt-4" @click="onContinue">Continue</UButton>
+    <UTextarea v-model="textareaContent" autoresize @input="onTextareaInput" />
+    <div class="flex space-x-4">
+      <UButton
+        to="/image-classification"
+        class="mt-4"
+        icon="i-game-icons-choice"
+        >Start Classification</UButton
+      >
+      <UButton to="/slideshow" class="mt-4" icon="i-tabler-slideshow"
+        >Start Slideshow</UButton
+      >
+    </div>
+    <pre class="h-96 overflow-scroll">{{ inputStore.urls }}</pre>
   </div>
 </template>

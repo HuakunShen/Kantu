@@ -4,7 +4,7 @@
     "beforeBuildCommand": "bun generate",
     "beforeDevCommand": "bun dev",
     "devPath": "http://localhost:3000",
-    "distDir": "../dist"
+    "distDir": "../.output/public"
   },
   "package": {
     "productName": "Kantu",
@@ -18,14 +18,25 @@
         "asset": true,
         "assetScope": ["$DOWNLOAD/**", "**"]
       },
+      "path": {
+        "all": true
+      },
+      "dialog": {
+        "all": true,
+        "ask": true,
+        "confirm": true,
+        "message": true,
+        "open": true,
+        "save": true
+      },
       "window": {
         "all": false,
         "center": false,
         "close": false,
         "create": false,
         "hide": false,
-        "maximize": false,
-        "minimize": false,
+        "maximize": true,
+        "minimize": true,
         "print": false,
         "requestUserAttention": false,
         "setAlwaysOnTop": false,
@@ -51,8 +62,21 @@
         "setTitle": false,
         "show": false,
         "startDragging": true,
-        "unmaximize": false,
-        "unminimize": false
+        "unmaximize": true,
+        "unminimize": true
+      },
+      "fs": {
+        "all": true,
+        "copyFile": true,
+        "createDir": true,
+        "exists": true,
+        "readDir": true,
+        "readFile": true,
+        "removeDir": true,
+        "removeFile": true,
+        "renameFile": true,
+        "scope": ["**"],
+        "writeFile": true
       }
     },
     "bundle": {

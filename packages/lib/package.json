@@ -1,24 +1,14 @@
 {
   "name": "@kantu/lib",
-  "exports": {
-    ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
-    }
-  },
-  "scripts": {
-    "build": "tsup"
-  },
+  "module": "index.ts",
+  "type": "module",
   "devDependencies": {
-    "bun-types": "latest",
-    "tsup": "^7.2.0",
-    "typescript": "^5.2.2"
+    "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "zod": "^3.22.2"
+    "zod": "^3.22.3"
   }
 }

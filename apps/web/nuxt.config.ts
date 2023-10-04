@@ -7,11 +7,15 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "@nuxt/image",
     "@pinia/nuxt",
+    "@pinia-plugin-persistedstate/nuxt",
   ],
   ui: {
     global: true,
-    icons: ["mdi", "simple-icons"],
+    icons: ["mdi", "simple-icons", "tabler", "game-icons"],
   },
   components: true,
   extends: ["../../packages/ui"],
+  nitro: {
+    preset: "vercel"
+  }
 });

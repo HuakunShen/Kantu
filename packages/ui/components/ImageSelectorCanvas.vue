@@ -18,7 +18,7 @@ defineProps<{ imgItems: ImageItem[] }>();
       <NuxtImg
         :src="urlItem.url"
         :class="`${
-          urlItem.candidate ? 'w-16' : ' w-full'
+          urlItem.candidate ? 'w-16' : ''
         } transition-all duration-500 max-h-screen`"
         alt=""
       />

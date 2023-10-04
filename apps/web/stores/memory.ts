@@ -8,4 +8,7 @@ export const useInputStore = defineStore("image-urls", {
       this.urls = urls;
     },
   },
+  persist: {
+    storage: persistedState.localStorage,
+  },
 });
