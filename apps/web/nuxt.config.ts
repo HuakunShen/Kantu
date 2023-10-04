@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   ],
   ui: {
     global: true,
-    icons: ["mdi", "simple-icons"],
+    icons: ["mdi", "simple-icons", "tabler", "game-icons"],
   },
   components: true,
   extends: ["../../packages/ui"],

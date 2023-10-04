@@ -32,10 +32,15 @@ function onTextareaInput() {
     <h2 class="text-2xl">Enter URLs (separated by new lines)</h2>
     <UTextarea v-model="textareaContent" autoresize @input="onTextareaInput" />
     <div class="flex space-x-4">
-      <UButton to="/image-classification" class="mt-4"
+      <UButton
+        to="/image-classification"
+        class="mt-4"
+        icon="i-game-icons-choice"
         >Start Classification</UButton
       >
-      <UButton to="/slideshow" class="mt-4">Start Slideshow</UButton>
+      <UButton to="/slideshow" class="mt-4" icon="i-tabler-slideshow"
+        >Start Slideshow</UButton
+      >
     </div>
     <pre class="h-96 overflow-scroll">{{ inputStore.urls }}</pre>
   </div>
