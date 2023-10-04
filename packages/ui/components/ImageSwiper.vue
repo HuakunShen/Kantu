@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ImageItem, Keys, ArrowKeys } from "~/utils/types";
+import { ImageItem, Keys, ArrowKeys } from "@kantu/lib2";
 
 const emit = defineEmits<{
   download: [];
