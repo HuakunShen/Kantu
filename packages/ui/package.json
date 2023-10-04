@@ -22,6 +22,7 @@
     "@kantu/lib": "workspace:*",
     "@nuxt/image": "rc",
     "@nuxt/ui": "^2.9.0",
-    "@pinia-plugin-persistedstate/nuxt": "^1.1.2"
+    "@pinia-plugin-persistedstate/nuxt": "^1.1.2",
+    "zod": "^3.22.3"
   }
 }
