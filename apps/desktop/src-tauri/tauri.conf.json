@@ -7,7 +7,7 @@
     "distDir": "../.output/public"
   },
   "package": {
-    "productName": "nuxt-app",
+    "productName": "kantu",
     "version": "0.1.0"
   },
   "tauri": {
@@ -76,7 +76,7 @@
         "fullscreen": false,
         "height": 600,
         "resizable": true,
-        "title": "nuxt-app",
+        "title": "kantu",
         "width": 800
       }
     ]
