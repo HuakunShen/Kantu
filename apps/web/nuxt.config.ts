@@ -14,8 +14,5 @@ export default defineNuxtConfig({
     icons: ["mdi", "simple-icons", "tabler", "game-icons"],
   },
   components: true,
-  extends: ["../../packages/ui"],
-  nitro: {
-    preset: "vercel"
-  }
+  extends: ["../../packages/ui"]
 });
