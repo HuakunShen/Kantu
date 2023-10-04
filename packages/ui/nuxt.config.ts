@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@formkit/auto-animate/nuxt",
     "nuxt-icon",
     "@nuxt/image",
+    '@pinia-plugin-persistedstate/nuxt',
   ],
   components: [{ path: "./components", prefix: "UI" }],
   ui: {
