@@ -23,7 +23,6 @@
     "@nuxt/ui": "^2.9.0",
     "@nuxt/image": "rc",
     "@tauri-apps/api": "^1.5.0",
-    "@kantu/lib": "workspace:*",
     "@pinia/nuxt": "^0.4.11",
     "pinia": "^2.1.6",
     "@pinia-plugin-persistedstate/nuxt": "^1.1.2"
