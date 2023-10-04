@@ -19,7 +19,7 @@
   "dependencies": {
     "@formkit/auto-animate": "^0.8.0",
     "@iconify/json": "^2.2.123",
-    "@kantu/lib2": "workspace:*",
+    "@kantu/lib": "workspace:*",
     "@nuxt/image": "rc",
     "@nuxt/ui": "^2.9.0",
     "@pinia-plugin-persistedstate/nuxt": "^1.1.2"

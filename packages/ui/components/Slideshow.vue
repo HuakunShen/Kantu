@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ImageItem } from "@kantu/lib2";
+import { ImageItem } from "@kantu/lib";
 
 const props = defineProps<{ imgUrls: string[]; slideshowInterval: number }>();
 const urlIdx = ref(0);

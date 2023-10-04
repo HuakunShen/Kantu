@@ -9,7 +9,7 @@
   "devDependencies": {
     "bun-types": "latest",
     "turbo": "^1.10.14",
-    "@kantu/lib2": "workspace:*"
+    "@kantu/lib": "workspace:*"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
