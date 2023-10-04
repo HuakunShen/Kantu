@@ -2,6 +2,7 @@
   "name": "kantu",
   "module": "index.ts",
   "type": "module",
+  "private": true,
   "scripts": {
     "build": "turbo build"
   },

@@ -170,5 +170,5 @@ dist
 
 # IntelliJ based IDEs
 .idea
-
+.netlify/
 .DS_Store
