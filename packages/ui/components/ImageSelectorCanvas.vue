@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { ImageItem } from "@kantu/lib";
+import { ImageItem } from "~/utils/types";
 
 defineProps<{ imgItems: ImageItem[] }>();
 </script>
