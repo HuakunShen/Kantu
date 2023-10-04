@@ -35,8 +35,8 @@
         "close": false,
         "create": false,
         "hide": false,
-        "maximize": false,
-        "minimize": false,
+        "maximize": true,
+        "minimize": true,
         "print": false,
         "requestUserAttention": false,
         "setAlwaysOnTop": false,
@@ -62,8 +62,8 @@
         "setTitle": false,
         "show": false,
         "startDragging": true,
-        "unmaximize": false,
-        "unminimize": false
+        "unmaximize": true,
+        "unminimize": true
       },
       "fs": {
         "all": true,
