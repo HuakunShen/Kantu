@@ -24,4 +24,4 @@ export default defineNuxtConfig({
   },
   components: true,
   extends: ["../../packages/ui"],
-});
+})
